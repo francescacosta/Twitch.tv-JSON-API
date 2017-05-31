@@ -25,3 +25,19 @@ h1 {
   height: 700px;
   margin-bottom: 150px;
 }
+
+.footer-text {
+  background-color: white;
+
+  display: block;
+  text-align: center;
+  width: 100%;
+
+  color: #12385c;
+  font-family: 'Play', sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.08em;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
