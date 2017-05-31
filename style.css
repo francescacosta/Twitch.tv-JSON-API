@@ -12,8 +12,12 @@ body {
 h1 {
   font-family: 'Lobster', cursive;
   font-size: 80px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 100px;
+  font-weight: 300;
   color: #12385c;
   text-align: center;
+  letter-spacing: 0.08em;
 }
 
 #tv-container {
@@ -36,6 +40,8 @@ h1 {
   color: #12385c;
   font-family: 'Play', sans-serif;
   font-size: 17px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
   letter-spacing: 0.08em;
 
   padding-top: 15px;
