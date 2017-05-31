@@ -1,3 +1,14 @@
 body {
   background-color: #feebed;
 }
+
+#title {
+
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 80px;
+  color: #12385c;
+  text-align: center;
+}
