@@ -37,6 +37,7 @@ tr:hover {
 
 #tv-container th, td  {
   border-bottom: 3px solid #feebed;
+  border-bottom: 4px solid #feebed;
 }
 
 #tv-container td {
