@@ -1,6 +1,7 @@
 var channels = ["freecodecamp","OgamingSC2","ESL_SC2", "storbeck"];
 
 channels.forEach(function(name) {
+  var url = `https://www.twitch.tv/${name.toLowerCase()}`
 
   $.getJSON("https://wind-bow.gomix.me/twitch-api/streams/" + name + "?callback=?", function(data) {
     console.log(data);
@@ -10,11 +11,11 @@ channels.forEach(function(name) {
 
     if (data.stream === null) {
       var row = `<td>no logo for now</td>`
-      row += `<td>${name}</td>`
+      row += `<td><a href="${url}" target="_blank">${name}</a></td>`
       row += `<td>Offline</td>`
     } else {
       var row = `<td><img src="${data.stream.channel.logo}" /></td>`
-      row += `<td>${name}</td>`
+      row += `<td><a href="${url}" target="_blank">${name}</a></td>`
       row += `<td>${data.stream.channel.status}</td>`
     }
 
