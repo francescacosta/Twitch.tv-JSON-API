@@ -1,5 +1,10 @@
 var channels = ["freecodecamp","OgamingSC2","ESL_SC2", "storbeck"];
 
+var urls = {
+  'freecodecamp': 'https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-profile_image-d9514f2df0962329-300x300.png',
+  'storbeck': 'https://static-cdn.jtvnw.net/jtv_user_pictures/xarth/404_user_70x70.png'
+}
+
 channels.forEach(function(name) {
   var url = `https://www.twitch.tv/${name.toLowerCase()}`
 
@@ -10,7 +15,7 @@ channels.forEach(function(name) {
     var channelData = document.getElementById('tv-body')
 
     if (data.stream === null) {
-      var row = `<td>no logo for now</td>`
+      var row = `<td><img src="${urls[name]}" /></td>`
       row += `<td><a href="${url}" target="_blank">${name}</a></td>`
       row += `<td>Offline</td>`
     } else {
@@ -20,7 +25,6 @@ channels.forEach(function(name) {
     }
 
     channelData.insertAdjacentHTML('beforeend', `<tr>${row}</tr>`)
-
 
     // <table>
     //   <tbody>
