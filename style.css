@@ -64,3 +64,8 @@ tr:hover {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+img {
+  width: 60px;
+  height: 60px;
+}
