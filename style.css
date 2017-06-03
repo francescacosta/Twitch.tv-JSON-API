@@ -25,6 +25,7 @@ h1 {
   width: 1000px;
   height: 700px;
   margin-bottom: 150px;
+  border-radius: 50px;
 }
 
 table {
