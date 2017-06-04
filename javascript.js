@@ -26,8 +26,6 @@ channels.forEach(function(name) {
       channelData.insertAdjacentHTML('beforeend', `<tr class="online">${row}</tr>`)
     }
 
-
-
   });
 
 });
@@ -39,6 +37,10 @@ showOnline.onclick = function() {
   for (i = 0; i < hideOffline.length; i++) {
     hideOffline[i].classList = 'offline hide'
   }
+  var viewOnline = document.getElementsByClassName('online')
+  for (i = 0; i < viewOnline.length; i++) {
+    viewOnline[i].classList = 'online'
+  }
 }
 
 var showOffline = document.getElementsByClassName("show-offline")[0]
@@ -47,5 +49,22 @@ showOffline.onclick = function() {
   var hideOnline = document.getElementsByClassName('online')
   for (i = 0; i < hideOnline.length; i++) {
     hideOnline[i].classList = 'online hide'
+  }
+  var viewOffline = document.getElementsByClassName('offline')
+  for (i = 0; i < viewOffline.length; i++) {
+    viewOffline[i].classList = 'offline'
+  }
+}
+
+var showAll = document.getElementsByClassName("all")[0]
+
+showAll.onclick = function() {
+  var viewOnline = document.getElementsByClassName('online')
+  for (i = 0; i < viewOnline.length; i++) {
+    viewOnline[i].classList = 'online'
+  }
+  var viewOffline = document.getElementsByClassName('offline')
+  for (i = 0; i < viewOffline.length; i++) {
+    viewOffline[i].classList = 'offline'
   }
 }
