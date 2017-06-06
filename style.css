@@ -76,3 +76,32 @@ img {
 .hide {
   display: none;
 }
+
+.online-tab {
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  width: 100px;
+  border-radius: 0px 50px 50px 0px;
+  margin-bottom: 10px
+}
+
+.show-online {
+  color: #12385c;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 19px;
+  letter-spacing: 0.08em;
+  padding-right: 10px;
+}
+
+.show-online:hover {
+  cursor: pointer;
+}
+
+.online-circle {
+    background: #28ca41;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 4px;
+}
