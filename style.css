@@ -162,7 +162,8 @@ img {
   display: flex;
   width: 100px;
   border-radius: 0px 50px 50px 0px;
-  margin-bottom: 9px
+  margin-bottom: 9px;
+  margin-left: -10px;
 }
 
 .all-tab:hover {
@@ -175,7 +176,7 @@ img {
   font-size: 16px;
   letter-spacing: 0.08em;
   padding-right: 10px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .all:hover {
