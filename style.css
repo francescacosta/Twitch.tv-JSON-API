@@ -24,6 +24,10 @@ h1 {
   width: 1000px;
   height: 700px;
   margin-bottom: 150px;
+  bborder-radius: 50px;
+}
+
+#tv-container:hover {
   border-radius: 50px;
 }
 
@@ -37,15 +41,22 @@ h1 {
 }
 
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
+  border-radius: 50px;
 }
 
-tr:hover {
-  background-color: #f5f5f5;
-}
-
-#tv-container th, td  {
+#tv-container th, #tv-container td  {
   border-bottom: 4px solid #feebed;
+  border-radius: 50px;
+}
+
+#tv-container th:hover, #tv-container td:hover  {
+  border-bottom: 4px solid #feebed;
+}
+
+#tv-container tr:hover  {
+  bbackground-color: #f5f5f5;
+  bborder-radius: 50px;
 }
 
 #tv-container td {
@@ -55,7 +66,6 @@ tr:hover {
   letter-spacing: 0.05em;
   padding: 20px;
   padding-left: 30px;
-
 }
 
 .footer-text {
@@ -85,7 +95,7 @@ img {
   display: none;
 }
 
-.online-tab {
+.online-tab, .offline-tab {
   background-color: white;
   padding: 3px;
   display: flex;
@@ -101,7 +111,7 @@ img {
   transition: 1.2s;
 }
 
-.show-online {
+.show-online, .show-offline, .all {
   color: #12385c;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 16px;
@@ -122,29 +132,10 @@ img {
     margin-top: 4px;
 }
 
-.offline-tab {
-  background-color: white;
-  padding: 3px;
-  display: flex;
-  width: 100px;
-  border-radius: 0px 50px 50px 0px;
-  margin-bottom: 10px;
-  margin-left: -65px;
-}
-
 .offline-tab:hover {
   background-color: #f5f5f5;
   margin-left: 0px;
   transition: 1.2s;
-}
-
-.show-offline {
-  color: #12385c;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 16px;
-  letter-spacing: 0.08em;
-  padding-right: 10px;
-  padding-left: 10px;
 }
 
 .show-offline:hover {
@@ -167,20 +158,10 @@ img {
   width: 100px;
   border-radius: 0px 50px 50px 0px;
   margin-bottom: 9px;
-  margin-left: -10px;
 }
 
 .all-tab:hover {
   background-color: #f5f5f5;
-}
-
-.all {
-  color: #12385c;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 16px;
-  letter-spacing: 0.08em;
-  padding-right: 10px;
-  padding-left: 20px;
 }
 
 .all:hover {
