@@ -97,6 +97,8 @@ img {
 
 .online-tab:hover {
   background-color: #f5f5f5;
+  margin-left: 0px;
+  transition: 1.2s;
 }
 
 .show-online {
@@ -132,6 +134,8 @@ img {
 
 .offline-tab:hover {
   background-color: #f5f5f5;
+  margin-left: 0px;
+  transition: 1.2s;
 }
 
 .show-offline {
