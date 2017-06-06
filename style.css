@@ -105,3 +105,33 @@ img {
     border-radius: 50%;
     margin-top: 4px;
 }
+
+.offline-tab {
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  width: 100px;
+  border-radius: 0px 50px 50px 0px;
+  margin-bottom: 10px
+}
+
+.show-offline {
+  color: #12385c;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  padding-right: 10px;
+}
+
+.show-offline:hover {
+  cursor: pointer;
+}
+
+.offline-circle {
+    background: #ff6058;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-left: -2px;
+}
